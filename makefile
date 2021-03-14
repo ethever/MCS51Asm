@@ -1,10 +1,18 @@
-# 注释
+# 汇编器路径
+COMP_PATH = /c/Keil/C51/BIN/A51.EXE
+# 链接器路径
+LINKER_PATH = /c/Keil/C51/BIN/LX51.exe
+# 转换器路径
+CONVERTER_PATH = /c/Keil/C51/BIN/Ohx51.exe
+
+
+
 main: MAIN
-	/c/Keil/C51/BIN/Ohx51.exe MAIN
+	$(CONVERTER_PATH) MAIN
 MAIN: main.OBJ
-	/c/Keil/C51/BIN/LX51.exe main.OBJ
+	$(LINKER_PATH) main.OBJ
 main.OBJ: main.asm
-	/c/Keil/C51/BIN/A51.EXE main.asm
+	$(COMP_PATH) main.asm
 
 .PHONY: clean
 clean: 

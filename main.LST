@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  MAIN                                                                 03/14/2021 19:45:32 PAGE     1
+A51 MACRO ASSEMBLER  MAIN                                                                 03/14/2021 20:26:41 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.02
@@ -9,7 +9,7 @@ LOC  OBJ            LINE     SOURCE
 
 0000 75A000            1     mov 0xa0, #0x00
 *** WARNING #A41 IN 1 (main.asm, LINE 1): MISSING 'END' STATEMENT
-A51 MACRO ASSEMBLER  MAIN                                                                 03/14/2021 19:45:32 PAGE     2
+A51 MACRO ASSEMBLER  MAIN                                                                 03/14/2021 20:26:41 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------
